@@ -1,0 +1,23 @@
+$gray: #c2c2c5;
+
+header {
+  min-height: 5vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
+  h2 {
+    justify-self: start;
+    color: $gray;
+  }
+
+  nav {
+    display: grid;
+    place-items: center;
+    justify-self: end;
+  }
+  .nav-img {
+    width: 40px;
+    height: 40px;
+  }
+}
