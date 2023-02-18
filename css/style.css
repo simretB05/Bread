@@ -40,32 +40,32 @@ body {
   place-items: center;
   background-color: #f6f6f8;
 }
-#main .one {
+
+#one {
   display: grid;
   place-items: center;
   text-align: center;
 }
-
-.main-component {
+#one .main-component {
   width: 80%;
   display: grid;
   place-items: center;
   text-align: center;
   min-height: 60vh;
 }
-.main-component .main-image {
+#one .main-component .main-image {
   width: 150px;
 }
-.main-component .main-title {
+#one .main-component .main-title {
   font-family: 2rem;
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 }
-.main-component .main-body {
+#one .main-component .main-body {
   text-align: center;
 }
-.main-component .main-btn {
+#one .main-component .main-btn {
   border: 1.5px solid black;
   border-radius: 25px;
   padding: 10px 30px;
@@ -100,6 +100,101 @@ body {
 }
 #two .card-body {
   width: 90%;
+}
+
+#three {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#three .main-componentThree {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 60vh;
+}
+#three .main-componentThree .main-titleThree {
+  font-family: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+#three .main-componentThree .main-bodyThree {
+  text-align: center;
+}
+#three .main-componentThree .main-btn {
+  border: 1.5px solid black;
+  border-radius: 25px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+#four {
+  display: grid;
+  place-items: center;
+  background-image: url(/images/breadfour.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#four .component-two {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#four .card {
+  width: 90%;
+  min-height: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(7, 7, 7);
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 30px;
+}
+#four .card-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+#four .card-title {
+  color: rgb(214, 156, 8);
+  opacity: 1;
+  font-weight: 900;
+}
+#four .card-body {
+  width: 90%;
+}
+
+#five {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#five .main-componentFive {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 30vh;
+}
+#five .main-componentFive .main-image {
+  width: 150px;
+}
+#five .main-componentFive .main-titleFive {
+  font-family: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+#five .main-componentFive .main-bodyFive {
+  text-align: center;
+}
+#five .main-componentFive .main-btn {
+  border: 1.5px solid black;
+  border-radius: 25px;
+  padding: 10px 30px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
