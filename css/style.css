@@ -1,0 +1,105 @@
+header {
+  min-height: 5vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
+}
+header h2 {
+  justify-self: start;
+  color: #c2c2c5;
+}
+header nav {
+  display: grid;
+  place-items: center;
+  justify-self: end;
+}
+header .nav-img {
+  width: 40px;
+  height: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#main {
+  min-height: 65vh;
+  display: grid;
+  place-items: center;
+  background-color: #f6f6f8;
+}
+#main .one {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.main-component {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 60vh;
+}
+.main-component .main-image {
+  width: 150px;
+}
+.main-component .main-title {
+  font-family: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+.main-component .main-body {
+  text-align: center;
+}
+.main-component .main-btn {
+  border: 1.5px solid black;
+  border-radius: 25px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+#two {
+  display: grid;
+  place-items: center;
+  background-image: url(/images/breadten.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#two .component-two {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#two .card {
+  width: 90%;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+#two .card-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+#two .card-body {
+  width: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */
