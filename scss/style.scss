@@ -20,10 +20,12 @@ body {
   place-items: center;
   background-color: $gray;
 }
+
 #one {
   display: grid;
   place-items: center;
   text-align: center;
+  min-height: 70vh;
 
   .main-component {
     width: 80%;
@@ -31,27 +33,74 @@ body {
     place-items: center;
     text-align: center;
     min-height: 60vh;
+  }
+
+  .main-image {
+    width: 90px;
+    height: 90px;
+  }
+  .main-title {
+    width: 90%;
+    font-family: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .main-body {
+    text-align: center;
+    width: 80%;
+  }
+  .main-btn {
+    width: 40%;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #one {
+    grid-template-columns: 1fr 1fr;
+    min-height: 35vh;
+    .main-component-img {
+      width: 166px;
+      transform: scale(1.9);
+      min-height: 29vh;
+    }
+    .main-component {
+      width: 90%;
+      justify-self: end;
+      min-height: 55vh;
+      order: 2;
+    }
 
     .main-image {
-      width: 150px;
-    }
-    .main-title {
-      font-family: 2rem;
-      font-weight: 400;
-      text-align: center;
-      text-transform: capitalize;
+      width: 105px;
+      justify-self: center;
     }
     .main-body {
       text-align: center;
-    }
-    .main-btn {
-      border: 1.5px solid black;
-      border-radius: 25px;
-      padding: 10px 30px;
-      text-transform: uppercase;
+      text-align: center;
+      width: 90%;
     }
   }
 }
+
+//
+//         @media only screen and (min-width: 600px) {
+//           .main-title {
+//             width: 100%;
+//           }
+//         }
+//
+// }
+// }
+
+// @media only screen and (min-width: 600px) {
+//   .main-image {
+//     width: 90px;
+//     justify-self: center;
+//   }
 
 #two {
   display: grid;
@@ -59,10 +108,28 @@ body {
   background-image: url(/images/breadten.jpg);
   background-position: center;
   background-size: cover;
+  min-height: 70vh;
+  width: 100%;
+  component-title {
+    text-align: center;
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 2.3rem;
+    margin: 48px 0;
+    font-weight: 400;
+  }
   .component-two {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 48px;
+  }
+  @media only screen and (min-width: 1000px) {
+    .component-two {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
   .card {
     width: 90%;
@@ -71,7 +138,12 @@ body {
     place-items: center;
     background-color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 22px;
+  }
+  @media only screen and (min-width: 600px) {
+    .card {
+      min-height: 64vh;
+    }
   }
   .card-img {
     width: 250px;
@@ -79,17 +151,36 @@ body {
     object-fit: cover;
   }
   .card-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
   }
   .card-body {
     width: 90%;
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .card-link {
+    margin: 32px 0;
+    color: black;
+    text-decoration: none;
+  }
+  .card-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
   }
 }
+
 #three {
   display: grid;
   place-items: center;
   text-align: center;
   .main-componentThree {
-    width: 80%;
+    width: 100%;
     display: grid;
     place-items: center;
     text-align: center;
@@ -100,15 +191,43 @@ body {
       font-weight: 400;
       text-align: center;
       text-transform: capitalize;
+      width: 80%;
     }
     .main-bodyThree {
       text-align: center;
+      letter-spacing: 1.6px;
+      font-weight: 400;
+      width: 90%;
+      font-size: 0.9rem;
     }
     .main-btn {
+      width: 40%;
       border: 1.5px solid black;
       border-radius: 25px;
       padding: 10px 30px;
       text-transform: uppercase;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  #three {
+    grid-template-columns: 1fr 1fr;
+    min-height: 35vh;
+    .main-component-img {
+      width: 166px;
+      transform: scale(1.9);
+      min-height: 27.6vh;
+    }
+    .main-componentThree {
+      width: 90%;
+      justify-self: end;
+      min-height: 53vh;
+    }
+
+    .main-body {
+      text-align: center;
+      text-align: center;
+      width: 80%;
     }
   }
 }

@@ -45,6 +45,7 @@ body {
   display: grid;
   place-items: center;
   text-align: center;
+  min-height: 70vh;
 }
 #one .main-component {
   width: 80%;
@@ -53,36 +54,84 @@ body {
   text-align: center;
   min-height: 60vh;
 }
-#one .main-component .main-image {
-  width: 150px;
+#one .main-image {
+  width: 90px;
+  height: 90px;
 }
-#one .main-component .main-title {
+#one .main-title {
+  width: 90%;
   font-family: 2rem;
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 }
-#one .main-component .main-body {
+#one .main-body {
   text-align: center;
+  width: 80%;
 }
-#one .main-component .main-btn {
+#one .main-btn {
+  width: 40%;
   border: 1.5px solid black;
   border-radius: 25px;
   padding: 10px 30px;
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 600px) {
+  #one {
+    grid-template-columns: 1fr 1fr;
+    min-height: 35vh;
+  }
+  #one .main-component-img {
+    width: 166px;
+    transform: scale(1.9);
+    min-height: 29vh;
+  }
+  #one .main-component {
+    width: 90%;
+    justify-self: end;
+    min-height: 55vh;
+    order: 2;
+  }
+  #one .main-image {
+    width: 105px;
+    justify-self: center;
+  }
+  #one .main-body {
+    text-align: center;
+    text-align: center;
+    width: 90%;
+  }
+}
 #two {
   display: grid;
   place-items: center;
   background-image: url(/images/breadten.jpg);
   background-position: center;
   background-size: cover;
+  min-height: 70vh;
+  width: 100%;
+}
+#two component-title {
+  text-align: center;
+  color: white;
+  letter-spacing: 1.2px;
+  font-size: 2.3rem;
+  margin: 48px 0;
+  font-weight: 400;
 }
 #two .component-two {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 1000px) {
+  #two .component-two {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 #two .card {
   width: 90%;
@@ -91,15 +140,40 @@ body {
   place-items: center;
   background-color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 22px;
+}
+@media only screen and (min-width: 600px) {
+  #two .card {
+    min-height: 64vh;
+  }
 }
 #two .card-img {
   width: 250px;
   height: 250px;
   object-fit: cover;
 }
+#two .card-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
 #two .card-body {
   width: 90%;
+  font-weight: 100;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+#two .card-link {
+  margin: 32px 0;
+  color: black;
+  text-decoration: none;
+}
+#two .card-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
 }
 
 #three {
@@ -108,7 +182,7 @@ body {
   text-align: center;
 }
 #three .main-componentThree {
-  width: 80%;
+  width: 100%;
   display: grid;
   place-items: center;
   text-align: center;
@@ -119,17 +193,44 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
+  width: 80%;
 }
 #three .main-componentThree .main-bodyThree {
   text-align: center;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  width: 90%;
+  font-size: 0.9rem;
 }
 #three .main-componentThree .main-btn {
+  width: 40%;
   border: 1.5px solid black;
   border-radius: 25px;
   padding: 10px 30px;
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 600px) {
+  #three {
+    grid-template-columns: 1fr 1fr;
+    min-height: 35vh;
+  }
+  #three .main-component-img {
+    width: 166px;
+    transform: scale(1.9);
+    min-height: 27.6vh;
+  }
+  #three .main-componentThree {
+    width: 90%;
+    justify-self: end;
+    min-height: 53vh;
+  }
+  #three .main-body {
+    text-align: center;
+    text-align: center;
+    width: 80%;
+  }
+}
 #four {
   display: grid;
   place-items: center;
